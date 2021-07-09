@@ -19,7 +19,7 @@ exports.config = {
   frameworkPath: require.resolve("protractor-cucumber-framework"),
   specs: ["../features/*.feature"],
   cucumberOpts: {
-    //format: ["json:reports/chrome/*.json"],
+    format: ["json:IdaasTest_Prod/reports/chrome/*.json"],
     require: ["../stepdefinitions/*.js", "../conf/hooks.js"],
     tags: ['(not @disabled)'],
     strict: false,
@@ -57,7 +57,7 @@ exports.config = {
   multiCapabilities: [
     {
       seleniumAddress:
-        "https://WebTools_Sauce:8d0f870c-3dc4-4749-afa6-0749b4265781@ondemand.saucelabs.com:443/wd/hub",
+        "https://inventory_manager:a6456d5f-2a8c-44a0-9e69-a4e6e6cc93cc@ondemand.saucelabs.com:443/wd/hub",
       // tunnelIdentifier: "t1",
       //parentTunnel: "apps_tools",
       browserName: "chrome",
