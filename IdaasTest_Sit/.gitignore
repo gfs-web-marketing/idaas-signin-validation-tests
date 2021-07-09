@@ -1,0 +1,16 @@
+/node_modules
+/conf/conf_local_chrome_staging.js
+/conf/conf_local_firefox_staging.js
+/conf/conf_local_Edge_staging.js
+/conf/conf_local_Mobile_staging.js
+/conf/conf_local_Safari_staging.js
+/conf/addTestDataToFirestore_staging.js
+/conf/deleteNonGFsItemsTestDataFromFirestore_staging.js
+/conf/deleteTestDataFromFirestore_staging.js
+/.history
+/.history/*
+/protractorFailuresReport
+
+# IDE - VSCode
+.vscode/*
+package-lock.json

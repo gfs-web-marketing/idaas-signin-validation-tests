@@ -1,0 +1,34 @@
+{
+  "name": "idaas-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "signin-migrated-users":"protractor conf/conf_chrome_migrated.js",
+    "signin-non-migrated-users":"protractor conf/conf_chrome_notMigrated.js"
+  },
+  "author": "ABHI",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": ">=0.21.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "cucumber": "^6.0.0",
+    "cucumber-pretty": "^1.5.0",
+    "date-and-time": ">=0.14.2",
+    "firebase-admin": "^9.9.0",
+    "firebase-tools": "^9.12.1",
+    "jasmine-expect": "^4.0.3",
+    "jasmine-node": "^3.0.0",
+    "lodash": "^4.17.19",
+    "node-fetch": "^2.6.1",
+    "properties-reader": "0.0.16",
+    "protractor": "^7.0.0",
+    "protractor-retry": "2.0.1",
+    "protractor-cucumber-framework": "^8.0.0",
+    "selenium-webdriver": "^4.0.0-beta.4"
+  },
+  "dependencies": {}
+}
