@@ -19,7 +19,7 @@ exports.config = {
   frameworkPath: require.resolve("protractor-cucumber-framework"),
   specs: ["../features/*.feature"],
   cucumberOpts: {
-    //format: ["json:reports/chrome/*.json"],
+    format: ["json:IdaasTest_Prod/reports/chrome/*.json"],
     require: ["../stepdefinitions/*.js", "../conf/hooks.js"],
     tags: ['(not @disabled)'],
     strict: false,
