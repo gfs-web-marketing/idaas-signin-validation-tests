@@ -6,8 +6,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test_login_migratedUsers":"protractor conf/conf_chrome_migrated.js",
-    "test_login_notMigratedUsers":"protractor conf/conf_chrome_notMigrated.js"
+    "test_login_migratedUsers":"protractor IdaasTest_Prod/onf/conf_chrome_migrated.js",
+    "test_login_notMigratedUsers":"protractor IdaasTest_Prod/onf/conf_chrome_notMigrated.js"
   },
   "author": "ABHI",
   "license": "ISC",
