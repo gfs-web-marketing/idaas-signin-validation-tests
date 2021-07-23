@@ -5,6 +5,11 @@ var until = protractor.ExpectedConditions;
 var password = "IDAASTest9!";
 var LandingPage = function () {
   this.goToHomepage = async function (username) {
+    if (username=='EbzTest1234'){
+      password="Recipe!1"
+    } else{
+      //DO NOTHING
+    }
     if (global.env == "migrated") {
       await browser.driver.get("https://experiencesit.gfs.com/");
       await browser.driver

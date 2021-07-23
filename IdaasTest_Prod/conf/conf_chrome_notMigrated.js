@@ -3,7 +3,7 @@ var timeInMs = Date.now();
 exports.config = {
   // specFileRetries: 2,
   // specFileRetriesDeferred: false,
-  // logLevel: "info",
+  logLevel: "INFO",
  // bail: 0,
   //waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
@@ -73,7 +73,7 @@ exports.config = {
       shardTestFiles: true,
       maxInstances: 25,
       build: //process.env.JOB_NAME + "_" + process.env.BUILD_NUMBER,
-      "notMigratedUsersTest_Prod_"+timeInMs,    
+      "non-migrated-users-prod_"+timeInMs,    
       extendedDebugging: true,
       capturePerformance: true
     },

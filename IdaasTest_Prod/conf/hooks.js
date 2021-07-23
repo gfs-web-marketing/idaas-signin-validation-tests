@@ -30,7 +30,7 @@ Before(async function (scenario) {
 AfterAll(async function () {});
 
 After(async function (scenario) {
-  await browser.executeScript("sauce:job-name=" + global.scenario2);
+  await browser.executeScript("sauce:job-name=" + scenario.pickle.name);
   await browser.sleep(3000);
   switch (scenario.result.status) {
     case "passed":

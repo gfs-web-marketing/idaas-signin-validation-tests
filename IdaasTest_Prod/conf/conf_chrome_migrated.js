@@ -73,7 +73,7 @@ exports.config = {
       shardTestFiles: true,
       maxInstances: 25,
       build: //process.env.JOB_NAME + "_" + process.env.BUILD_NUMBER,
-      "migratedUsersTest_Prod_"+timeInMs,    
+      "migrated-users-prod_"+timeInMs,    
       extendedDebugging: true,
       capturePerformance: true
     },

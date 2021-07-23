@@ -4,7 +4,7 @@ const { assert } = require("chai");
 var until = protractor.ExpectedConditions;
 var password = "IDAASTest9!";
 var LandingPage = function () {
-  this.goToHomepage = async function (username) {
+  this.goToHomepage = async function (username) { 
     if (global.env == "migrated") {
       await browser.driver.get("https://experience.gfs.com/");
       await browser.driver
@@ -46,7 +46,7 @@ var LandingPage = function () {
       await browser.element(by.xpath("/html/body/div[1]/div/div[2]/div[2]/header/div/div[2]/div[1]/nav/ul/li[2]/div[1]/div/a")).click();
       await browser.sleep(1000);
 
-      await elementLocatorFunctions
+/*       await elementLocatorFunctions
         .enterTextById("idp-discovery-username", username)
         .then(async function (actual) { });
       await elementLocatorFunctions
@@ -54,7 +54,7 @@ var LandingPage = function () {
         .then(async function () {
           console.log("clicked on Next button");
         });
-
+ */
       await elementLocatorFunctions
         .enterTextById("username", username)
         .then(async function (actual) { });

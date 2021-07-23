@@ -13,11 +13,12 @@ Given("The user is signed into Ordering using username {string}", async function
       break;
     default: 
       console.log('username: '+string)
-      scenario2 = string;
+      //scenario2 = string;
         await LandingPage
           .goToHomepage(string)
           .then(async function () {
-            scenario2 = string;
+            //scenario2 = string;
+            await browser.waitForAngularEnabled(false);
             await browser.driver.sleep(10000);
           });
         break;
