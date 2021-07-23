@@ -57,7 +57,7 @@ exports.config = {
   multiCapabilities: [
     {
       seleniumAddress:
-        "https://inventory_manager:a6456d5f-2a8c-44a0-9e69-a4e6e6cc93cc@ondemand.saucelabs.com:443/wd/hub",
+      "https://WebTools_Sauce:8d0f870c-3dc4-4749-afa6-0749b4265781@ondemand.saucelabs.com:443/wd/hub",
       // tunnelIdentifier: "t1",
       //parentTunnel: "apps_tools",
       browserName: "chrome",
@@ -72,8 +72,8 @@ exports.config = {
       platform: "Windows 10",
       shardTestFiles: true,
       maxInstances: 25,
-      build: //process.env.JOB_NAME + "_" + process.env.BUILD_NUMBER,
-      "non-migrated-users-prod_"+timeInMs,    
+      build: process.env.JOB_NAME + "_" + process.env.BUILD_NUMBER,
+      //"non-migrated-users-prod_"+timeInMs,    
       extendedDebugging: true,
       capturePerformance: true
     },
