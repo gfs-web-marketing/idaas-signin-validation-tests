@@ -80,11 +80,11 @@ var LandingPage2 = function () {
       await elementLocatorFunctions
         .enterTextById("idp-discovery-username", username)
         .then(async function (actual) { });
-      await elementLocatorFunctions
+      /*await elementLocatorFunctions
         .clickElementById("idp-discovery-submit")
         .then(async function () {
           console.log("clicked on Next button");
-        });
+        });*/
       await elementLocatorFunctions
         .enterTextById("okta-signin-password", password)
         .then(async function (actual) { });
