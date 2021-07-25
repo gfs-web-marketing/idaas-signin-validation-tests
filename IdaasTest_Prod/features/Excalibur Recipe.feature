@@ -1,4 +1,4 @@
-Feature: Excalibur
+Feature: Excalibur - Recipe
         Scenario: Excalibur - Recipe
                 Given The user is signed into "Recipe Manager" using username "excalibur"
                 Then The user should be redirected to "https://apps.gfs.com/recipeManager"
