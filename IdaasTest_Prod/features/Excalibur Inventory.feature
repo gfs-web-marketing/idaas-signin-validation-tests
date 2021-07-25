@@ -1,4 +1,4 @@
-Feature: Excalibur
+Feature: Excalibur - Inventory
         Scenario: Excalibur - Inventory
                 Given The user is signed into "Inventory Manager" using username "excalibur"
                 Then The user should be redirected to "https://apps.gfs.com/cimWeb"
