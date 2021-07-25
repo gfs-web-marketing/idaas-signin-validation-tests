@@ -17,7 +17,7 @@ var LandingPage = function () {
       await browser.element(by.xpath("/html/body/div[1]/div/div[2]/div[2]/header/div/div[2]/div[1]/nav/ul/li[2]/div[1]/div/a")).click();
       await browser.sleep(1000);
       await elementLocatorFunctions
-        .enterTextById("idp-discovery-username", username)
+        .enterTextById("okta-signin-username", username)
         .then(async function (actual) { });
      /* await elementLocatorFunctions
         .clickElementById("idp-discovery-submit")
