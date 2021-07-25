@@ -78,7 +78,7 @@ var LandingPage2 = function () {
       }
       await browser.sleep(2000);
       await elementLocatorFunctions
-        .enterTextById("idp-discovery-username", username)
+        .enterTextById("okta-signin-username", username)
         .then(async function (actual) { });
       /*await elementLocatorFunctions
         .clickElementById("idp-discovery-submit")
